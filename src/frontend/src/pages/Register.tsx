@@ -6,7 +6,6 @@ import {
   CheckCircle,
   Eye,
   EyeOff,
-  Gavel,
   Loader2,
   Lock,
   Mail,
@@ -118,14 +117,18 @@ export default function Register() {
     <div className="min-h-screen bg-navy flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-lg animate-fade-in">
         <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-12 w-12 rounded-xl bg-gold/20 flex items-center justify-center">
-              <Gavel className="h-6 w-6 text-gold" />
-            </div>
+          <div className="flex items-center justify-center mb-4">
+            <img
+              src="/assets/generated/bidnova-logo-futuristic.dim_400x120.png"
+              alt="BidNova"
+              className="h-14 w-auto"
+              style={{
+                borderRadius: "20px",
+                filter:
+                  "drop-shadow(0 0 8px rgba(212, 175, 55, 1)) drop-shadow(0 0 18px rgba(212, 175, 55, 0.9)) drop-shadow(0 0 40px rgba(212, 175, 55, 0.6)) drop-shadow(0 0 70px rgba(212, 175, 55, 0.35))",
+              }}
+            />
           </div>
-          <span className="text-white font-display font-bold text-3xl">
-            Bid<span className="text-gold">Vault</span>
-          </span>
           <h1 className="text-xl font-semibold text-white mt-3 mb-1">
             Create your account
           </h1>

@@ -34,8 +34,8 @@ export default function UserProfile() {
   const storedName =
     localStorage.getItem("display_name") ??
     authUser?.username ??
-    "BidVault User";
-  const email = authUser?.email ?? "guest@bidvault.com";
+    "BidNova User";
+  const email = authUser?.email ?? "guest@bidnova.com";
   const role = authUser?.role === "admin" ? "Admin" : "Bidder";
 
   const [displayName, setDisplayName] = useState(storedName);
@@ -209,19 +209,6 @@ export default function UserProfile() {
             ))}
           </CardContent>
         </Card>
-
-        {/* Footer */}
-        <footer className="text-center text-gray-600 text-xs pt-2 pb-4">
-          © {new Date().getFullYear()}. Built with love using{" "}
-          <a
-            href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gold hover:underline"
-          >
-            caffeine.ai
-          </a>
-        </footer>
       </div>
     </main>
   );

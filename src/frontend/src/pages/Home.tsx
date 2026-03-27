@@ -24,14 +24,6 @@ export default function Home() {
     >
       {/* Hero */}
       <section className="bg-navy relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-15"
-          style={{
-            backgroundImage:
-              "url(/assets/generated/hero-auction.dim_1600x700.jpg)",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -195,7 +187,7 @@ export default function Home() {
             <div className="flex items-center gap-2 text-white">
               <Gavel className="h-6 w-6 text-gold" />
               <span className="font-display font-bold text-xl">
-                Bid<span className="text-gold">Vault</span>
+                Bid<span className="text-gold">Nova</span>
               </span>
             </div>
             <div className="flex gap-6 text-sm text-gray-400">
@@ -211,15 +203,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-navy-surface mt-8 pt-6 text-center text-gray-500 text-xs">
-            &copy; {new Date().getFullYear()} BidVault. Built with love using{" "}
-            <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`}
-              className="hover:text-gold transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              caffeine.ai
-            </a>
+            &copy; {new Date().getFullYear()} BidNova. All rights reserved.
           </div>
         </div>
       </footer>

@@ -18,7 +18,7 @@ const faqs: { patterns: string[]; response: string }[] = [
   {
     patterns: ["anti-snip", "last second", "extend", "sniping"],
     response:
-      "BidVault uses anti-sniping protection! If a bid is placed in the final 30 seconds, the auction automatically extends by 60 seconds. This gives all bidders a fair chance to respond.",
+      "BidNova uses anti-sniping protection! If a bid is placed in the final 30 seconds, the auction automatically extends by 60 seconds. This gives all bidders a fair chance to respond.",
   },
   {
     patterns: ["post auction", "sell", "list item", "create auction"],
@@ -28,7 +28,7 @@ const faqs: { patterns: string[]; response: string }[] = [
   {
     patterns: ["payment", "pay", "icp", "token", "currency"],
     response:
-      "BidVault uses ICP (Internet Computer Protocol) tokens for all transactions. Bids and payments are processed on-chain for maximum security and transparency.",
+      "BidNova uses ICP (Internet Computer Protocol) tokens for all transactions. Bids and payments are processed on-chain for maximum security and transparency.",
   },
   {
     patterns: ["win", "winner", "how to win"],
@@ -38,7 +38,7 @@ const faqs: { patterns: string[]; response: string }[] = [
   {
     patterns: ["register", "sign up", "create account"],
     response:
-      'BidVault uses Internet Identity for secure, password-free authentication. Click "Sign Up" in the navbar and follow the Internet Identity setup steps.',
+      'BidNova uses Internet Identity for secure, password-free authentication. Click "Sign Up" in the navbar and follow the Internet Identity setup steps.',
   },
 ];
 
@@ -57,7 +57,7 @@ export function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 0,
-      text: "Hi! I'm the BidVault assistant. How can I help you today?",
+      text: "Hi! I'm the BidNova assistant. How can I help you today?",
       sender: "bot",
     },
   ]);
@@ -120,7 +120,7 @@ export function ChatWidget() {
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full" />
                 <span className="text-white font-semibold text-sm">
-                  BidVault Assistant
+                  BidNova Assistant
                 </span>
               </div>
               <button

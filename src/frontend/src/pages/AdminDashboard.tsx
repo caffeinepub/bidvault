@@ -142,7 +142,7 @@ export default function AdminDashboard() {
             Admin Panel
           </p>
           <h1 className="font-display text-2xl font-bold text-white">
-            BidVault Dashboard
+            BidNova Dashboard
           </h1>
         </div>
       </div>

@@ -12,7 +12,6 @@ import {
   AlertTriangle,
   Bell,
   Clock,
-  Gavel,
   Sparkles,
   Tag,
   Trophy,
@@ -60,7 +59,7 @@ const INITIAL_NOTIFICATIONS: Notification[] = [
   {
     id: 5,
     icon: "welcome",
-    title: "BidVault: Welcome to the platform!",
+    title: "BidNova: Welcome to the platform!",
     time: "2 days ago",
     read: true,
   },
@@ -106,11 +105,18 @@ export function Navbar() {
             to="/"
             data-ocid="nav.link"
             className="flex items-center gap-2 text-white font-bold text-xl hover:text-gold transition-colors"
+            style={{ borderRadius: "20px", overflow: "hidden" }}
           >
-            <Gavel className="h-6 w-6 text-gold" />
-            <span>
-              Bid<span className="text-gold">Vault</span>
-            </span>
+            <img
+              src="/assets/generated/bidnova-logo-futuristic.dim_400x120.png"
+              alt="BidNova"
+              className="h-9 w-auto"
+              style={{
+                borderRadius: "20px",
+                filter:
+                  "drop-shadow(0 0 8px rgba(212, 175, 55, 1)) drop-shadow(0 0 18px rgba(212, 175, 55, 0.85)) drop-shadow(0 0 36px rgba(212, 175, 55, 0.55)) drop-shadow(0 0 60px rgba(212, 175, 55, 0.3))",
+              }}
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
