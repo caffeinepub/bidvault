@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Link } from "@tanstack/react-router";
+import { Link, useNavigate } from "@tanstack/react-router";
 import { Eye, EyeOff, Lock, Mail } from "lucide-react";
 import { useState } from "react";
 
@@ -13,6 +13,7 @@ export default function Login() {
   const [rememberMe, setRememberMe] = useState(false);
   const [emailError, setEmailError] = useState<string | null>(null);
   const [passwordError, setPasswordError] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -33,7 +34,7 @@ export default function Login() {
 
     if (valid) {
       if (rememberMe) localStorage.setItem("remember_me", "true");
-      alert("Login Successful");
+      navigate({ to: "/userhome" });
     }
   }
 
