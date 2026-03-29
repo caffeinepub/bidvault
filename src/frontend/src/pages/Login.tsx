@@ -34,6 +34,10 @@ export default function Login() {
 
     if (valid) {
       if (rememberMe) localStorage.setItem("remember_me", "true");
+      const username = email.split("@")[0];
+      localStorage.setItem("auth_user", JSON.stringify({ username, email }));
+      localStorage.setItem("display_name", username);
+      localStorage.setItem("isLoggedIn", "true");
       navigate({ to: "/userhome" });
     }
   }
